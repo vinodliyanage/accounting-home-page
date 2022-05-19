@@ -121,6 +121,12 @@ p {
     top: -15px;
 }
 
+@media screen and (max-width: 980px) {
+    .hero__image img {
+       display: none;
+    }
+}
+
 /* grid */
 
 .grid {
