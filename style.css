@@ -1,5 +1,5 @@
 *,
-*::after, 
+*::after,
 *::before {
     box-sizing: border-box;
     margin: 0;
@@ -19,8 +19,11 @@ h1 {
 }
 
 h2 {
-    font-size: 2.5rem; 
-    margin-bottom: 10px;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333333;
+    font-weight: 600;
+    letter-spacing: .8px;
 }
 
 p {
@@ -40,28 +43,28 @@ p {
     background: hsla(0, 0%, 94%, 0.979);
     height: 70px;
     z-index: 9999;
-    margin-left: 50px;
-
+    
 }
 
 
 /* list */
 
 
+
 .list {
-    display:flex;
+    display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
     gap: 5px;
-    margin-right: 50px;
+    margin-right: 100px;
 }
 
 
 .nav--link {
     letter-spacing: 1.1px;
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 550;
     text-decoration: none;
     color: rgb(49, 49, 49);
     cursor: pointer;
@@ -72,6 +75,7 @@ p {
 .nav--link:hover {
     color: #128db1;
 }
+
 .link--home:hover {
     color: #ffba63;
 }
@@ -84,6 +88,7 @@ p {
     object-fit: contain;
     object-position: center;
     max-height: 200px;
+    margin-left: 50px;
 }
 
 @media screen and (max-width: 980px) {
@@ -101,18 +106,18 @@ p {
     padding: 0;
     overflow: hidden;
     height: 100vh;
-    
+
 }
 
 .hero__image {
     margin-top: 150px;
-    
+
 }
 
 .hero__image img {
     position: relative;
     width: 650px;
-    left: 20px;
+    left: 57px;
     top: -15px;
 }
 
@@ -121,19 +126,19 @@ p {
 .grid {
     display: grid;
     justify-items: center;
- 
+
 }
 
 .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
-   
+
 }
 
 
-@media  screen and (max-width: 980px) {
+@media screen and (max-width: 980px) {
     .grid--1x2 {
-        grid-template-columns:1fr;
-       
+        grid-template-columns: 1fr;
+
     }
 }
 
@@ -159,7 +164,7 @@ p {
     font-size: 1.5rem;
     border: 2px solid #ffba63;
     transition: background 0.3s;
-}   
+}
 
 .btn--primary {
     background: #128db1;
@@ -178,7 +183,7 @@ p {
 
 /* banner */
 
-.banner img{
+.banner img {
     position: absolute;
     width: 900px;
     bottom: -10px;
